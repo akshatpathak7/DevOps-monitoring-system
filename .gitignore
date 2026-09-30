@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+node_modules/
+dist/
+playwright-report/
+test-results/
+.coverage
+.DS_Store
+*.tsbuildinfo
+
+# Local tooling and assistant state must never be committed.
+.ruff_cache/
+.openai/
+.claude/
+.chatgpt/

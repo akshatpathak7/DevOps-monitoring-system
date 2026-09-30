@@ -1,0 +1,12 @@
+# Requires Docker Compose 2.24.4+ for !override.
+services:
+  frontend:
+    ports: !override
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:?Set your domain}
+  backend:
+    environment:
+      COOKIE_SECURE: "true"
